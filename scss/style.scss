@@ -1,0 +1,190 @@
+@import "./partials/variables";
+@import "./partials/reset";
+
+
+body{
+    font-family: $fuente;
+    position: relative;
+    width: $ancho;
+    height: 100%;
+    background-image: linear-gradient(to right, #af712b, #ba803b, #c48f4c, #ce9e5d, #d9ad6e, #d9ad6e, #d9ad6e, #d9ad6e, #ce9e5d, #c48f4c, #ba803b, #af712b);
+}
+
+.principal{
+    width: 100%;
+    padding: 5px;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+    text-align: center;
+}
+
+
+h1{
+    color: black;
+    font-size: $tamanio * 10;
+}
+
+h2{
+    font-size: $tamanio * 3;
+    padding: 30px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: $tamanio * 1,5;
+    padding: 0;
+    text-align: center;
+}
+h4{
+    font-size: $tamanio * 1,5;
+    padding: 30px;
+    text-align: center;
+}
+
+
+p{
+    color: black;
+}
+
+.text-content{
+    text-align: center;
+    color: black;
+    background-color: brown;
+    width: 70%;
+    height: 250px;
+    margin: 20px;
+    margin-left: 210px;
+    border: 8px solid black;
+    padding: 3%; 
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;  
+}
+
+.borde-redondo{
+    border-radius: 30px;
+}
+
+
+iframe{
+    width: 600px;
+    height: 450px; 
+    margin: 15px 40px 5px 10px;
+    margin-left: 370px;
+    border: 4px solid black;
+    padding: 20px;
+}
+
+
+/* ------------------------ PRODUCTOS ------------------------ */
+
+
+
+.productos{
+    
+    .productos__container{
+        margin-left: 280px;
+        transition: all .30s;
+    }
+    
+    .productos__container2{
+        margin-left: 310px;
+        transition: all .30s;
+    }
+    
+    .productos__container3{
+        margin-left: 410px;
+        transition: all .30s;
+    }
+
+    .productos__container:hover{
+        transform: scale(1.10);
+    }
+
+    .productos__container2:hover{
+        transform: scale(1.10);
+    }
+
+    .productos__container3:hover{
+        transform: scale(1.10);
+    }
+}
+
+
+
+/* ------------------------ NOVEDADES ------------------------ */
+
+
+#productos__novedades{
+    margin-left: 400px;
+}
+
+
+
+/* ------------------------ OPINIONES ------------------------ */
+
+
+.opiniones__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    
+
+    .opiniones__card {
+        width: 360px;
+    }
+
+    .opiniones__bubble {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        background-color: #ebebeb;
+        padding: 1rem;
+        border-radius: 10px;
+        position: relative;
+        margin-left: 30px;
+        transition: all .5s;
+    }
+
+    .opiniones__bubble:hover {
+        transform: scale(1.10);
+    }
+
+    
+    .opiniones__nombres {
+        margin-left: 30px;
+    }
+}
+
+
+
+/* ------------------------ FOOTER ------------------------ */
+
+
+
+footer {
+    background-color: #000000;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+
+    h5 {
+    text-align: center;    
+    font-size: 2rem;
+    color: #ffffff;
+    margin-left: 20px;
+    }
+
+    .link_item{
+        text-align: center
+    }
+
+    #link__color{
+        color: #ffffff
+    }
+
+}
+
+@import "./partials/queries";
