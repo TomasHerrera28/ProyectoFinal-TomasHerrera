@@ -79,27 +79,45 @@ iframe {
   padding: 20px;
 }
 
+.grid_novedades {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(2, 500px);
+  justify-content: center;
+  padding: 100px;
+  gap: 40px;
+}
+.grid_novedades .grid_cartas {
+  background-color: #999191;
+}
+
 /* ------------------------ PRODUCTOS ------------------------ */
-.productos .productos__container {
-  margin-left: 280px;
-  transition: all 0.3s;
+.productos__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 50px;
 }
-.productos .productos__container2 {
-  margin-left: 310px;
-  transition: all 0.3s;
+.productos__container .productos__container1 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;
+  width: 500px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.5s;
 }
-.productos .productos__container3 {
-  margin-left: 410px;
-  transition: all 0.3s;
-}
-.productos .productos__container:hover {
-  transform: scale(1.1);
-}
-.productos .productos__container2:hover {
-  transform: scale(1.1);
-}
-.productos .productos__container3:hover {
-  transform: scale(1.1);
+.productos__container .productos__container1:hover {
+  transform: scale(1.15);
 }
 
 /* ------------------------ NOVEDADES ------------------------ */
@@ -109,34 +127,43 @@ iframe {
 
 /* ------------------------ OPINIONES ------------------------ */
 .opiniones__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 100%;
+  padding: 50px;
 }
 .opiniones__container .opiniones__card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   width: 360px;
 }
 .opiniones__container .opiniones__bubble {
   display: flex;
-  width: 100%;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+  width: 250px;
   background-color: #ebebeb;
-  padding: 1rem;
-  border-radius: 10px;
-  position: relative;
-  margin-left: 30px;
+  padding: 20px;
+  border-radius: 5%;
+  margin: 10px;
   transition: all 0.5s;
 }
 .opiniones__container .opiniones__bubble:hover {
   transform: scale(1.1);
 }
 .opiniones__container .opiniones__nombres {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 /* ------------------------ FOOTER ------------------------ */
 footer {
-  background-color: #000000;
+  background-color: #362a0f;
   width: 100%;
   height: 100%;
   position: relative;
@@ -182,57 +209,71 @@ footer #link__color {
     margin-left: 420px;
   }
   /* --------------- Productos ---------------- */
-  .productos .productos__container {
-    margin-left: 280px;
-    transition: all 0.3s;
-  }
-  .productos .productos__container2 {
-    margin-left: 310px;
-    transition: all 0.3s;
-  }
-  .productos .productos__container3 {
-    margin-left: 410px;
-    transition: all 0.3s;
-  }
-  .productos .productos__container:hover {
-    transform: scale(1.1);
-  }
-  .productos .productos__container2:hover {
-    transform: scale(1.1);
-  }
-  .productos .productos__container3:hover {
-    transform: scale(1.1);
-  }
+  /*.productos{
+
+      .productos__container{
+          margin-left: 280px;
+          transition: all .30s;
+      }
+
+      .productos__container2{
+          margin-left: 310px;
+          transition: all .30s;
+      }
+
+      .productos__container3{
+          margin-left: 410px;
+          transition: all .30s;
+      }
+
+      .productos__container:hover{
+          transform: scale(1.10);
+      }
+
+      .productos__container2:hover{
+          transform: scale(1.10);
+      }
+
+      .productos__container3:hover{
+          transform: scale(1.10);
+      }
+  }*/
   /* --------------- Novedades ---------------- */
   #productos__novedades {
     margin-left: 400px;
   }
   /* --------------- Opiniones ---------------- */
-  .opiniones__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+  /*.opiniones__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+
+  .opiniones__card {
+      width: 360px;
   }
-  .opiniones__container .opiniones__card {
-    width: 360px;
+
+  .opiniones__bubble {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      background-color: #ebebeb;
+      padding: 1rem;
+      border-radius: 10px;
+      position: relative;
+      margin-left: 30px;
+      transition: all .5s;
   }
-  .opiniones__container .opiniones__bubble {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    background-color: #ebebeb;
-    padding: 1rem;
-    border-radius: 10px;
-    position: relative;
-    margin-left: 30px;
-    transition: all 0.5s;
+
+  .opiniones__bubble:hover {
+      transform: scale(1.10);
   }
-  .opiniones__container .opiniones__bubble:hover {
-    transform: scale(1.1);
+
+
+  .opiniones__nombres {
+      margin-left: 30px;
   }
-  .opiniones__container .opiniones__nombres {
-    margin-left: 30px;
-  }
+  }*/
 }
 /*------------------ MODO TABLET ------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
@@ -262,57 +303,71 @@ footer #link__color {
     margin-left: 420px;
   }
   /* --------------- Productos ---------------- */
-  .productos .productos__container {
-    margin-left: 280px;
-    transition: all 0.3s;
-  }
-  .productos .productos__container2 {
-    margin-left: 310px;
-    transition: all 0.3s;
-  }
-  .productos .productos__container3 {
-    margin-left: 410px;
-    transition: all 0.3s;
-  }
-  .productos .productos__container:hover {
-    transform: scale(1.1);
-  }
-  .productos .productos__container2:hover {
-    transform: scale(1.1);
-  }
-  .productos .productos__container3:hover {
-    transform: scale(1.1);
-  }
+  /*.productos{
+
+      .productos__container{
+          margin-left: 280px;
+          transition: all .30s;
+      }
+
+      .productos__container2{
+          margin-left: 310px;
+          transition: all .30s;
+      }
+
+      .productos__container3{
+          margin-left: 410px;
+          transition: all .30s;
+      }
+
+      .productos__container:hover{
+          transform: scale(1.10);
+      }
+
+      .productos__container2:hover{
+          transform: scale(1.10);
+      }
+
+      .productos__container3:hover{
+          transform: scale(1.10);
+      }
+  }*/
   /* --------------- Novedades ---------------- */
   #productos__novedades {
     margin-left: 400px;
   }
   /* --------------- Opiniones ---------------- */
-  .opiniones__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
+  /*.opiniones__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+
+
+  .opiniones__card {
+      width: 360px;
   }
-  .opiniones__container .opiniones__card {
-    width: 360px;
+
+  .opiniones__bubble {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      background-color: #ebebeb;
+      padding: 1rem;
+      border-radius: 10px;
+      position: relative;
+      margin-left: 30px;
+      transition: all .5s;
   }
-  .opiniones__container .opiniones__bubble {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    background-color: #ebebeb;
-    padding: 1rem;
-    border-radius: 10px;
-    position: relative;
-    margin-left: 30px;
-    transition: all 0.5s;
+
+  .opiniones__bubble:hover {
+      transform: scale(1.10);
   }
-  .opiniones__container .opiniones__bubble:hover {
-    transform: scale(1.1);
+
+
+  .opiniones__nombres {
+      margin-left: 30px;
   }
-  .opiniones__container .opiniones__nombres {
-    margin-left: 30px;
-  }
+  }*/
 }
 /*------------------ MODO MOBILE ------------------*/
 @media (max-width: 599px) {
@@ -340,47 +395,55 @@ footer #link__color {
     border: 10px solid black;
     margin-left: 10px;
   }
-}
-/* --------------- Productos ---------------- */
-.productos .productos__container {
-  margin-left: 20px;
-  transition: all 0.3s;
-}
-.productos .productos__container2 {
-  margin-left: 20px;
-  transition: all 0.3s;
-}
-.productos .productos__container3 {
-  margin-left: 20px;
-  transition: all 0.3s;
-}
+  /* --------------- Productos ---------------- */
+  /*.productos{
 
-/* --------------- Novedades ---------------- */
-#productos__novedades {
-  margin-left: 130px;
-}
+      .productos__container{
+          margin-left: 20px;
+          transition: all .30s;
+      }
 
-/* --------------- Opiniones ---------------- */
-.opiniones__container {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
-}
-.opiniones__container .opiniones__card {
-  width: 360px;
-}
-.opiniones__container .opiniones__bubble {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  background-color: #ebebeb;
-  padding: 1rem;
-  border-radius: 10px;
-  position: relative;
-  margin-left: 30px;
-}
-.opiniones__container .opiniones__nombres {
-  margin-left: 30px;
+      .productos__container2{
+          margin-left: 20px;
+          transition: all .30s;
+      }
+
+      .productos__container3{
+          margin-left: 20px;
+          transition: all .30s;
+      }
+
+  }*/
+  /* --------------- Novedades ---------------- */
+  #productos__novedades {
+    margin-left: 130px;
+  }
+  /* --------------- Opiniones ---------------- */
+  /*.opiniones__container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 3rem;
+
+
+      .opiniones__card {
+          width: 360px;
+      }
+
+      .opiniones__bubble {
+          display: flex;
+          width: 100%;
+          flex-direction: column;
+          background-color: #ebebeb;
+          padding: 1rem;
+          border-radius: 10px;
+          position: relative;
+          margin-left: 30px;
+      }
+
+
+      .opiniones__nombres {
+          margin-left: 30px;
+      }*/
 }
 
 /*# sourceMappingURL=style.css.map */

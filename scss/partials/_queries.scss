@@ -32,7 +32,7 @@
    /* --------------- Productos ---------------- */
 
 
-    .productos{
+    /*.productos{
     
     .productos__container{
         margin-left: 280px;
@@ -60,7 +60,7 @@
     .productos__container3:hover{
         transform: scale(1.10);
     }
-}
+}*/
 
     /* --------------- Novedades ---------------- */
 
@@ -73,7 +73,7 @@
     /* --------------- Opiniones ---------------- */
 
 
-    .opiniones__container {
+    /*.opiniones__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -103,7 +103,7 @@
     .opiniones__nombres {
         margin-left: 30px;
     }
-    }
+    }*/
 }
 
 /*------------------ MODO TABLET ------------------*/
@@ -140,7 +140,7 @@
    /* --------------- Productos ---------------- */
 
 
-    .productos{
+    /*.productos{
     
     .productos__container{
         margin-left: 280px;
@@ -168,7 +168,7 @@
     .productos__container3:hover{
         transform: scale(1.10);
     }
-}
+}*/
 
     /* --------------- Novedades ---------------- */
 
@@ -181,7 +181,7 @@
     /* --------------- Opiniones ---------------- */
 
 
-    .opiniones__container {
+    /*.opiniones__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
@@ -211,7 +211,7 @@
     .opiniones__nombres {
         margin-left: 30px;
     }
-    }
+    }*/
 }
 
 
@@ -245,13 +245,13 @@
         margin-left: 10px;
     }
 
-}
+
 
 /* --------------- Productos ---------------- */
 
 
 
-.productos{
+/*.productos{
     
     .productos__container{
         margin-left: 20px;
@@ -268,7 +268,7 @@
         transition: all .30s;
     }
 
-}
+}*/
 
 /* --------------- Novedades ---------------- */
 
@@ -280,7 +280,7 @@
 /* --------------- Opiniones ---------------- */
 
 
-.opiniones__container {
+/*.opiniones__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 3rem;
@@ -304,5 +304,5 @@
     
     .opiniones__nombres {
         margin-left: 30px;
-    }
+    }*/
 }
