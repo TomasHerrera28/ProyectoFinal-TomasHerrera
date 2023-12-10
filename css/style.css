@@ -14,7 +14,6 @@ body {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, #af712b, #ba803b, #c48f4c, #ce9e5d, #d9ad6e, #d9ad6e, #d9ad6e, #d9ad6e, #ce9e5d, #c48f4c, #ba803b, #af712b);
-  overflow: scroll;
 }
 
 /* ------------------------ TITULOS ------------------------ */
