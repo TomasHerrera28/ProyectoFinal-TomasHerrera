@@ -10,23 +10,30 @@ body{
     background-image: linear-gradient(to right, #af712b, #ba803b, #c48f4c, #ce9e5d, #d9ad6e, #d9ad6e, #d9ad6e, #d9ad6e, #ce9e5d, #c48f4c, #ba803b, #af712b);
 }
 
-.principal{
+/* ------------------------ TITULOS ------------------------ */
+
+#titulo_principal{
     width: 100%;
     padding: 5px;
     font-size: 50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: rgb(0, 0, 0);
     border-radius: 30px;
     text-align: center;
+    font-size: $tamanio * 7;
 }
 
 
-h1{
+.titulo_secundario{
+    text-align: center;
+    font-size: $tamanio * 7;
     color: black;
-    font-size: $tamanio * 10;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h2{
-    font-size: $tamanio * 3;
+    font-size: $tamanio * 4;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 30px;
     margin-left: 20px;
     text-align: center;
@@ -36,57 +43,99 @@ h3 {
     font-size: $tamanio * 1,5;
     padding: 0;
     text-align: center;
-}
-h4{
-    font-size: $tamanio * 1,5;
-    padding: 30px;
-    text-align: center;
+    color: #000000;
 }
 
+h4{
+    font-size: $tamanio * 1,5;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 60px;
+}
+
+
+
+/* ------------------------ PARRAFOS ------------------------ */
 
 p{
     color: black;
-}
-
-.text-content{
-    text-align: center;
-    color: black;
-    background-color: brown;
-    width: 70%;
-    height: 250px;
-    margin: 20px;
-    margin-left: 210px;
-    border: 8px solid black;
-    padding: 3%; 
     font-family: 'Times New Roman', Times, serif;
-    font-size: 110%;  
+    font-size: $tamanio * 2;
 }
 
-.borde-redondo{
-    border-radius: 30px;
+
+
+/* -------------------- INTRODUCCION -------------------- */
+.grid_introduccion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        padding: 30px; 
+
+        .FotoPortada{
+            position:static;
+            width: 100%;
+            height: 100%;
+        }
+    
+    .grid_texto{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background-color: #972323;
+        padding: 10px;
+        height: 100%;
+        width: 1000px;
+        margin: 10px;
+        border-radius: 5px;
+    }
+
+    
 }
 
+
+/* ------------------------ MAPA ------------------------ */
 
 iframe{
-    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /*width: 600px;
     height: 450px; 
-    margin: 15px 40px 5px 10px;
+    margin: 20px 40px ;
     margin-left: 370px;
     border: 4px solid black;
-    padding: 20px;
+    padding: 20px;*/
 }
+
+/* ------------------------ NOVEDADES ------------------------ */
 
 .grid_novedades{
     display: grid;
     grid-template-columns: repeat(2, 350px);
-    grid-template-rows: repeat(2, 500px);
+    grid-template-rows: repeat(3, 400px);
     justify-content: center;
-    padding: 100px;
-    gap: 40px;
+    padding: 60px;
+    gap: 70px;
+    
 
     .grid_cartas{
-        background-color: #999191;
+        text-align: center;
+        font-size: 25px;
+        transition: all .5s;
     }
+
+    .grid_cartas:hover {
+        transform: scale(1.15);
+    }
+
 }
 
 
@@ -112,7 +161,7 @@ iframe{
         justify-content: center;
         padding: 10px;
         height: 100%;
-        width: 500px;
+        width: 400px;
         margin: 10px;
         border-radius: 5px;
         background-color: rgb(0, 0, 0);
@@ -124,15 +173,6 @@ iframe{
         }
 
     }
-
-
-/* ------------------------ NOVEDADES ------------------------ */
-
-
-#productos__novedades{
-    margin-left: 400px;
-}
-
 
 
 /* ------------------------ OPINIONES ------------------------ */
@@ -186,7 +226,7 @@ iframe{
 
 
 footer {
-    background-color: #362a0f;
+    background-color: #af712b;
     width: 100%;
     height: 100%;
     position: relative;
@@ -195,8 +235,9 @@ footer {
     h5 {
     text-align: center;    
     font-size: 2rem;
-    color: #ffffff;
+    color: #000000;
     margin-left: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
     .link_item{
@@ -204,7 +245,7 @@ footer {
     }
 
     #link__color{
-        color: #ffffff
+        color: #000000
     }
 
 }

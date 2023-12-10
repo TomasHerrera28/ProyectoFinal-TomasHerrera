@@ -15,22 +15,28 @@ body {
   background-image: linear-gradient(to right, #af712b, #ba803b, #c48f4c, #ce9e5d, #d9ad6e, #d9ad6e, #d9ad6e, #d9ad6e, #ce9e5d, #c48f4c, #ba803b, #af712b);
 }
 
-.principal {
+/* ------------------------ TITULOS ------------------------ */
+#titulo_principal {
   width: 100%;
   padding: 5px;
   font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(0, 0, 0);
   border-radius: 30px;
   text-align: center;
+  font-size: 70px;
 }
 
-h1 {
+.titulo_secundario {
+  text-align: center;
+  font-size: 70px;
   color: black;
-  font-size: 100px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   padding: 30px;
   margin-left: 20px;
   text-align: center;
@@ -40,55 +46,83 @@ h3 {
   font-size: 10px, 5;
   padding: 0;
   text-align: center;
+  color: #000000;
 }
 
 h4 {
   font-size: 10px, 5;
-  padding: 30px;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
+  padding: 60px;
 }
 
+/* ------------------------ PARRAFOS ------------------------ */
 p {
   color: black;
-}
-
-.text-content {
-  text-align: center;
-  color: black;
-  background-color: brown;
-  width: 70%;
-  height: 250px;
-  margin: 20px;
-  margin-left: 210px;
-  border: 8px solid black;
-  padding: 3%;
   font-family: "Times New Roman", Times, serif;
-  font-size: 110%;
+  font-size: 20px;
 }
 
-.borde-redondo {
-  border-radius: 30px;
+/* -------------------- INTRODUCCION -------------------- */
+.grid_introduccion {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+.grid_introduccion .FotoPortada {
+  position: static;
+  width: 100%;
+  height: 100%;
+}
+.grid_introduccion .grid_texto {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #972323;
+  padding: 10px;
+  height: 100%;
+  width: 1000px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
+/* ------------------------ MAPA ------------------------ */
 iframe {
-  width: 600px;
-  height: 450px;
-  margin: 15px 40px 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /*width: 600px;
+  height: 450px; 
+  margin: 20px 40px ;
   margin-left: 370px;
   border: 4px solid black;
-  padding: 20px;
+  padding: 20px;*/
 }
 
+/* ------------------------ NOVEDADES ------------------------ */
 .grid_novedades {
   display: grid;
   grid-template-columns: repeat(2, 350px);
-  grid-template-rows: repeat(2, 500px);
+  grid-template-rows: repeat(3, 400px);
   justify-content: center;
-  padding: 100px;
-  gap: 40px;
+  padding: 60px;
+  gap: 70px;
 }
 .grid_novedades .grid_cartas {
-  background-color: #999191;
+  text-align: center;
+  font-size: 25px;
+  transition: all 0.5s;
+}
+.grid_novedades .grid_cartas:hover {
+  transform: scale(1.15);
 }
 
 /* ------------------------ PRODUCTOS ------------------------ */
@@ -110,7 +144,7 @@ iframe {
   justify-content: center;
   padding: 10px;
   height: 100%;
-  width: 500px;
+  width: 400px;
   margin: 10px;
   border-radius: 5px;
   background-color: rgb(0, 0, 0);
@@ -118,11 +152,6 @@ iframe {
 }
 .productos__container .productos__container1:hover {
   transform: scale(1.15);
-}
-
-/* ------------------------ NOVEDADES ------------------------ */
-#productos__novedades {
-  margin-left: 400px;
 }
 
 /* ------------------------ OPINIONES ------------------------ */
@@ -163,7 +192,7 @@ iframe {
 
 /* ------------------------ FOOTER ------------------------ */
 footer {
-  background-color: #362a0f;
+  background-color: #af712b;
   width: 100%;
   height: 100%;
   position: relative;
@@ -171,14 +200,15 @@ footer {
 footer h5 {
   text-align: center;
   font-size: 2rem;
-  color: #ffffff;
+  color: #000000;
   margin-left: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 footer .link_item {
   text-align: center;
 }
 footer #link__color {
-  color: #ffffff;
+  color: #000000;
 }
 
 /*---------------- MODO DESKTOP ----------------*/
@@ -209,71 +239,6 @@ footer #link__color {
     margin-left: 420px;
   }
   /* --------------- Productos ---------------- */
-  /*.productos{
-
-      .productos__container{
-          margin-left: 280px;
-          transition: all .30s;
-      }
-
-      .productos__container2{
-          margin-left: 310px;
-          transition: all .30s;
-      }
-
-      .productos__container3{
-          margin-left: 410px;
-          transition: all .30s;
-      }
-
-      .productos__container:hover{
-          transform: scale(1.10);
-      }
-
-      .productos__container2:hover{
-          transform: scale(1.10);
-      }
-
-      .productos__container3:hover{
-          transform: scale(1.10);
-      }
-  }*/
-  /* --------------- Novedades ---------------- */
-  #productos__novedades {
-    margin-left: 400px;
-  }
-  /* --------------- Opiniones ---------------- */
-  /*.opiniones__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-
-
-  .opiniones__card {
-      width: 360px;
-  }
-
-  .opiniones__bubble {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      background-color: #ebebeb;
-      padding: 1rem;
-      border-radius: 10px;
-      position: relative;
-      margin-left: 30px;
-      transition: all .5s;
-  }
-
-  .opiniones__bubble:hover {
-      transform: scale(1.10);
-  }
-
-
-  .opiniones__nombres {
-      margin-left: 30px;
-  }
-  }*/
 }
 /*------------------ MODO TABLET ------------------*/
 @media (min-width: 600px) and (max-width: 900px) {
@@ -303,74 +268,9 @@ footer #link__color {
     margin-left: 420px;
   }
   /* --------------- Productos ---------------- */
-  /*.productos{
-
-      .productos__container{
-          margin-left: 280px;
-          transition: all .30s;
-      }
-
-      .productos__container2{
-          margin-left: 310px;
-          transition: all .30s;
-      }
-
-      .productos__container3{
-          margin-left: 410px;
-          transition: all .30s;
-      }
-
-      .productos__container:hover{
-          transform: scale(1.10);
-      }
-
-      .productos__container2:hover{
-          transform: scale(1.10);
-      }
-
-      .productos__container3:hover{
-          transform: scale(1.10);
-      }
-  }*/
-  /* --------------- Novedades ---------------- */
-  #productos__novedades {
-    margin-left: 400px;
-  }
-  /* --------------- Opiniones ---------------- */
-  /*.opiniones__container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 3rem;
-
-
-  .opiniones__card {
-      width: 360px;
-  }
-
-  .opiniones__bubble {
-      display: flex;
-      width: 100%;
-      flex-direction: column;
-      background-color: #ebebeb;
-      padding: 1rem;
-      border-radius: 10px;
-      position: relative;
-      margin-left: 30px;
-      transition: all .5s;
-  }
-
-  .opiniones__bubble:hover {
-      transform: scale(1.10);
-  }
-
-
-  .opiniones__nombres {
-      margin-left: 30px;
-  }
-  }*/
 }
 /*------------------ MODO MOBILE ------------------*/
-@media (max-width: 599px) {
+@media (max-width: 375px) {
   .text-content {
     text-align: center;
     color: black;
@@ -396,54 +296,7 @@ footer #link__color {
     margin-left: 10px;
   }
   /* --------------- Productos ---------------- */
-  /*.productos{
-
-      .productos__container{
-          margin-left: 20px;
-          transition: all .30s;
-      }
-
-      .productos__container2{
-          margin-left: 20px;
-          transition: all .30s;
-      }
-
-      .productos__container3{
-          margin-left: 20px;
-          transition: all .30s;
-      }
-
-  }*/
   /* --------------- Novedades ---------------- */
-  #productos__novedades {
-    margin-left: 130px;
-  }
-  /* --------------- Opiniones ---------------- */
-  /*.opiniones__container {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      gap: 3rem;
-
-
-      .opiniones__card {
-          width: 360px;
-      }
-
-      .opiniones__bubble {
-          display: flex;
-          width: 100%;
-          flex-direction: column;
-          background-color: #ebebeb;
-          padding: 1rem;
-          border-radius: 10px;
-          position: relative;
-          margin-left: 30px;
-      }
-
-
-      .opiniones__nombres {
-          margin-left: 30px;
-      }*/
 }
 
 /*# sourceMappingURL=style.css.map */

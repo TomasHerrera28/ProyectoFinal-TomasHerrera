@@ -32,78 +32,6 @@
    /* --------------- Productos ---------------- */
 
 
-    /*.productos{
-    
-    .productos__container{
-        margin-left: 280px;
-        transition: all .30s;
-    }
-    
-    .productos__container2{
-        margin-left: 310px;
-        transition: all .30s;
-    }
-    
-    .productos__container3{
-        margin-left: 410px;
-        transition: all .30s;
-    }
-
-    .productos__container:hover{
-        transform: scale(1.10);
-    }
-
-    .productos__container2:hover{
-        transform: scale(1.10);
-    }
-
-    .productos__container3:hover{
-        transform: scale(1.10);
-    }
-}*/
-
-    /* --------------- Novedades ---------------- */
-
-
-    #productos__novedades{
-    margin-left: 400px;
-    }
-
-
-    /* --------------- Opiniones ---------------- */
-
-
-    /*.opiniones__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    
-
-    .opiniones__card {
-        width: 360px;
-    }
-
-    .opiniones__bubble {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        background-color: #ebebeb;
-        padding: 1rem;
-        border-radius: 10px;
-        position: relative;
-        margin-left: 30px;
-        transition: all .5s;
-    }
-
-    .opiniones__bubble:hover {
-        transform: scale(1.10);
-    }
-
-    
-    .opiniones__nombres {
-        margin-left: 30px;
-    }
-    }*/
 }
 
 /*------------------ MODO TABLET ------------------*/
@@ -140,84 +68,15 @@
    /* --------------- Productos ---------------- */
 
 
-    /*.productos{
-    
-    .productos__container{
-        margin-left: 280px;
-        transition: all .30s;
-    }
-    
-    .productos__container2{
-        margin-left: 310px;
-        transition: all .30s;
-    }
-    
-    .productos__container3{
-        margin-left: 410px;
-        transition: all .30s;
-    }
-
-    .productos__container:hover{
-        transform: scale(1.10);
-    }
-
-    .productos__container2:hover{
-        transform: scale(1.10);
-    }
-
-    .productos__container3:hover{
-        transform: scale(1.10);
-    }
-}*/
-
-    /* --------------- Novedades ---------------- */
 
 
-    #productos__novedades{
-    margin-left: 400px;
-    }
 
-
-    /* --------------- Opiniones ---------------- */
-
-
-    /*.opiniones__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 3rem;
-    
-
-    .opiniones__card {
-        width: 360px;
-    }
-
-    .opiniones__bubble {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        background-color: #ebebeb;
-        padding: 1rem;
-        border-radius: 10px;
-        position: relative;
-        margin-left: 30px;
-        transition: all .5s;
-    }
-
-    .opiniones__bubble:hover {
-        transform: scale(1.10);
-    }
-
-    
-    .opiniones__nombres {
-        margin-left: 30px;
-    }
-    }*/
 }
 
 
 /*------------------ MODO MOBILE ------------------*/
 
-@media (max-width:599px) {
+@media (max-width:375px) {
     
     .text-content {
         text-align: center;
@@ -251,58 +110,7 @@
 
 
 
-/*.productos{
-    
-    .productos__container{
-        margin-left: 20px;
-        transition: all .30s;
-    }
-    
-    .productos__container2{
-        margin-left: 20px;
-        transition: all .30s;
-    }
-    
-    .productos__container3{
-        margin-left: 20px;
-        transition: all .30s;
-    }
-
-}*/
-
 /* --------------- Novedades ---------------- */
 
 
-    #productos__novedades{
-    margin-left: 130px;
-    }
-
-/* --------------- Opiniones ---------------- */
-
-
-/*.opiniones__container {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 3rem;
-    
-
-    .opiniones__card {
-        width: 360px;
-    }
-
-    .opiniones__bubble {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
-        background-color: #ebebeb;
-        padding: 1rem;
-        border-radius: 10px;
-        position: relative;
-        margin-left: 30px;
-    }
-
-    
-    .opiniones__nombres {
-        margin-left: 30px;
-    }*/
 }

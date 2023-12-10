@@ -17,8 +17,9 @@
 </head>
 <body>
     
-    
-      <h1 class="principal" id="Logo">
+      <!---------------- Título ---------------->  
+
+      <h1 id="titulo_principal">
         
           <img src="./assets/img/logos/favicon-96x96.png"
           alt="Logotipo Panovo"/>
@@ -26,9 +27,8 @@
         <span>PANOVO</span>
       </h1>
 
-      <!--listas ordenadas (se escriben con "ol")-->
-      <!--listas desordenadas (se escribe con "ul")-->
-      <!--listas anidadas-->
+      <!---------------- Barra de navegación ---------------->
+
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="./index.html">Inicio</a>
@@ -38,31 +38,36 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/novedades.html">Novedades</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./pages/novedades.html">Novedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./pages/productos.html">Productos</a>
+                <a class="nav-link" href="./pages/contacto.html">Contacto</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
       
-  
+       <!---------------- Título e introducción ---------------->
 
     <h2>Panadería de barrio</h2>
 
     
-  <div class="text-content">
-    <h3>Historia de Panovo</h3>
-      <p>En noviembre de 2021, Panovo abrió sus puertas, convirtiéndose en el rincón más dulce de la ciudad. Esta encantadora panadería fue concebida con amor por el pan y la tradición. Sus hornos humean con delicias frescas: baguettes doradas, pasteles esponjosos y croissants irresistibles. En cada rincón de Panovo, la esencia de la autenticidad y el sabor se entrelazan, creando una experiencia única que deleita a los amantes del buen pan.</p>
-  </div>
+
+    <section class="grid_introduccion">
+      <img src="./assets/img/logos/Portada.jpg" alt="Portada" class="FotoPortada">
+        <div class="grid_texto">
+          <h3>Historia de Panovo</h3>
+            <p>En noviembre de 2021, Panovo abrió sus puertas, convirtiéndose en el rincón más dulce de la ciudad. Esta encantadora panadería fue concebida con amor por el pan y la tradición. Sus hornos humean con delicias frescas: baguettes doradas, pasteles esponjosos y croissants irresistibles. En cada rincón de Panovo, la esencia de la autenticidad y el sabor se entrelazan, creando una experiencia única que deleita a los amantes del buen pan.</p>
+        </div>
+    </section>
+
 
    <!---------------- ubicacion del lugar ---------------->
   </main>
@@ -100,10 +105,11 @@
           </ul>
       </section>
   </footer>
-  <!-------------- Fin Footer --------------
+  <!-------------- Fin Footer -------------->
 
 
-    <!--Bootstrap js-->
+    <!-- Bootstrap js -->
+
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
 </body>
