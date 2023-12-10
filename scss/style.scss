@@ -8,6 +8,7 @@ body{
     width: $ancho;
     height: 100%;
     background-image: linear-gradient(to right, #af712b, #ba803b, #c48f4c, #ce9e5d, #d9ad6e, #d9ad6e, #d9ad6e, #d9ad6e, #ce9e5d, #c48f4c, #ba803b, #af712b);
+    overflow: scroll;
 }
 
 /* ------------------------ TITULOS ------------------------ */
@@ -64,9 +65,15 @@ p{
 }
 
 
+.FotoPortada{
+    position: static;
+    justify-content: center;
+    width: 100%;
+}
+
 
 /* -------------------- INTRODUCCION -------------------- */
-.grid_introduccion{
+.panovo_introduccion{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -76,13 +83,8 @@ p{
         width: 100%;
         padding: 30px; 
 
-        .FotoPortada{
-            position:static;
-            width: 100%;
-            height: 100%;
-        }
     
-    .grid_texto{
+    .panovo_texto{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -91,7 +93,7 @@ p{
         background-color: #972323;
         padding: 10px;
         height: 100%;
-        width: 1000px;
+        width: 900px;
         margin: 10px;
         border-radius: 5px;
     }
@@ -101,20 +103,30 @@ p{
 
 
 /* ------------------------ MAPA ------------------------ */
-
-iframe{
+.mapa_flex{
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    /*width: 600px;
-    height: 450px; 
-    margin: 20px 40px ;
-    margin-left: 370px;
-    border: 4px solid black;
-    padding: 20px;*/
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+    
+    
+    iframe{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        height: 500px;
+        width: 900px;
+        margin: 10px;
+        border-radius: 5px;
+    }
 }
-
 /* ------------------------ NOVEDADES ------------------------ */
 
 .grid_novedades{

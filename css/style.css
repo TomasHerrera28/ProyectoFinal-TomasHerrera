@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*reset*/
 * {
   margin: 0;
@@ -13,6 +14,7 @@ body {
   width: 100%;
   height: 100%;
   background-image: linear-gradient(to right, #af712b, #ba803b, #c48f4c, #ce9e5d, #d9ad6e, #d9ad6e, #d9ad6e, #d9ad6e, #ce9e5d, #c48f4c, #ba803b, #af712b);
+  overflow: scroll;
 }
 
 /* ------------------------ TITULOS ------------------------ */
@@ -63,8 +65,14 @@ p {
   font-size: 20px;
 }
 
+.FotoPortada {
+  position: static;
+  justify-content: center;
+  width: 100%;
+}
+
 /* -------------------- INTRODUCCION -------------------- */
-.grid_introduccion {
+.panovo_introduccion {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -74,12 +82,7 @@ p {
   width: 100%;
   padding: 30px;
 }
-.grid_introduccion .FotoPortada {
-  position: static;
-  width: 100%;
-  height: 100%;
-}
-.grid_introduccion .grid_texto {
+.panovo_introduccion .panovo_texto {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -88,23 +91,33 @@ p {
   background-color: #972323;
   padding: 10px;
   height: 100%;
-  width: 1000px;
+  width: 900px;
   margin: 10px;
   border-radius: 5px;
 }
 
 /* ------------------------ MAPA ------------------------ */
-iframe {
+.mapa_flex {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  /*width: 600px;
-  height: 450px; 
-  margin: 20px 40px ;
-  margin-left: 370px;
-  border: 4px solid black;
-  padding: 20px;*/
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+}
+.mapa_flex iframe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 500px;
+  width: 900px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
 /* ------------------------ NOVEDADES ------------------------ */
@@ -211,92 +224,205 @@ footer #link__color {
   color: #000000;
 }
 
-/*---------------- MODO DESKTOP ----------------*/
-@media (min-width: 901px) {
-  .text-content {
-    text-align: center;
-    color: black;
-    background-color: brown;
-    width: 70%;
-    height: 250px;
-    margin: 20px;
-    margin-left: 210px;
-    border: 8px solid black;
-    padding: 3%;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 110%;
+/*------------------------ MODO DESKTOP ------------------------*/
+@media (min-width: 992px) and (max-width: 1400px) {
+  /* -------------------- Introduccion -------------------- */
+  .panovo_introduccion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
   }
-  iframe {
-    width: 600px;
-    height: 450px;
-    margin: 15px 40px 5px 10px;
-    margin-left: 370px;
-    border: 4px solid black;
-  }
-  .imagenes {
-    margin: 20px;
-    border: 10px solid black;
-    margin-left: 420px;
-  }
-  /* --------------- Productos ---------------- */
-}
-/*------------------ MODO TABLET ------------------*/
-@media (min-width: 600px) and (max-width: 900px) {
-  .text-content {
-    text-align: center;
-    color: black;
-    background-color: brown;
-    width: 70%;
-    height: 250px;
-    margin: 20px;
-    margin-left: 210px;
-    border: 8px solid black;
-    padding: 3%;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 110%;
-  }
-  iframe {
-    width: 600px;
-    height: 450px;
-    margin: 15px 40px 5px 10px;
-    margin-left: 370px;
-    border: 4px solid black;
-  }
-  .imagenes {
-    margin: 20px;
-    border: 10px solid black;
-    margin-left: 420px;
-  }
-  /* --------------- Productos ---------------- */
-}
-/*------------------ MODO MOBILE ------------------*/
-@media (max-width: 375px) {
-  .text-content {
-    text-align: center;
-    color: black;
-    background-color: brown;
-    width: 70%;
-    height: 500px;
-    overflow: scroll;
+  .panovo_introduccion .panovo_texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #972323;
+    padding: 10px;
+    height: 100%;
+    width: 900px;
     margin: 10px;
-    margin-left: 10px;
-    border: 8px solid black;
-    padding: 5%;
+    border-radius: 5px;
   }
-  iframe {
+  /* ------------------------ Mapa ------------------------ */
+  .mapa_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+  }
+  .mapa_flex iframe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 500px;
+    width: 900px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+}
+/*------------------------ MODO TABLET ------------------------*/
+@media (min-width: 700px) and (max-width: 991px) {
+  /* -------------------- Introduccion -------------------- */
+  .panovo_introduccion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+  }
+  .panovo_introduccion .panovo_texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #972323;
+    padding: 10px;
+    height: 100%;
     width: 600px;
-    height: 450px;
-    margin: 15px 40px 5px 10px;
-    margin-left: 10px;
-    border: 4px solid black;
+    margin: 10px;
+    border-radius: 5px;
   }
-  .imagenes {
-    margin: 20px;
-    border: 10px solid black;
-    margin-left: 10px;
+  /* ------------------------ Mapa ------------------------ */
+  .mapa_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+  .mapa_flex iframe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 400px;
+    width: 600px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  /* --------------------- Novedades -------------------- */
+  .grid_novedades {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(3, 400px);
+    justify-content: center;
+    padding: 60px;
+    gap: 70px;
+  }
+  .grid_novedades .grid_cartas {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+/*------------------------ MODO MOBILE ------------------------*/
+@media (min-width: 375px) and (max-width: 699px) {
+  /* -------------------- Introducción -------------------- */
+  .panovo_introduccion {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+  .panovo_introduccion .panovo_texto {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #972323;
+    padding: 10px;
+    height: 450px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+  /* ------------------------ Mapa ------------------------ */
+  .mapa_flex {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+  }
+  .mapa_flex iframe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 450px;
+    width: 350px;
+    margin: 10px;
+    border-radius: 5px;
   }
   /* --------------- Productos ---------------- */
+  .productos__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 25px;
+  }
+  .productos__container .productos__container1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 100%;
+    width: 300px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+  }
   /* --------------- Novedades ---------------- */
+  .grid_novedades {
+    display: grid;
+    grid-template-columns: repeat(1, 350px);
+    grid-template-rows: repeat(1, 400px);
+    justify-content: center;
+    padding: 50px;
+    gap: 60px;
+  }
+  .grid_novedades .grid_cartas {
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
